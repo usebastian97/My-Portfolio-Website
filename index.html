@@ -1,53 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title> Sebastian Utoiu</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Custom css file link -->
+   <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
-    <table cellspacing="20">
-      <tr>
-        <td><img src="img/sebi-modified.png" alt="Sebastian's image profile" width="200px"></td>
-        <td><h1>Sebastian Utoiu</h1>
-        <p><em>Junior Systems Engineer & <strong>Passionate Mobile Developer</strong></em></p>
 
-        <ul>
-          <li> <a href="https://github.com/usebastian97"> Github Profile</a></li>
-          <li> <a href="contact_me.html"> Contact me </a></li>
-        </ul>
-      </td>
-      </tr>
-    </table>
-    <hr>
-    <h3>Courses</h3>
-    <ul>
-        <li>Android Development Program</li>
-    </ul>
-    <hr>
-    <h3>My hobbies</h3>
-    <ol>
-        <li> Fotball </li>
-        <li> Jogging </li>
-        <li> Tennis </li>
-        <li> Gym </li>
-    </ol>
-    <hr>
-    <h3> Work Experience</h3>
-    <p> <strong> March 2021 - Present:</strong> Junior Systems Engineer </p>
-    <hr>
-    <h3> Skills </h3>
+<div class="container">
 
-    <ul>
-      <li> Java ⭐️⭐️⭐️⭐️</li>
-      <li> Kotlin ⭐️</li>
-      <li> JavaScript ⭐️</li>
-      <li> Dart ⭐️</li>
-      <li> Adobe XD ⭐️⭐️</li>
-      <li> HTML ⭐️⭐️</li>
-    </ul>
+  <div class="content">
+    <h3 class="title"> My Webiste Portfolio is comming soon</h3>
+    <p>
+      The content of my portfolio site is currently under development.
+      Thank you for your understanding, see you soon.
+    </p>
+    <div class="counter-down">
 
+    <div class="box">
+      <h3 id="day">00</h3>
+      <span>day</span>
+    </div>
+
+    <div class="box">
+      <h3 id="day">00</h3>
+      <span>hour</span>
+    </div>
+
+    <div class="box">
+      <h3 id="day">00</h3>
+      <span>minute</span>
+    </div>
+
+    <div class="box">
+      <h3 id="day">00</h3>
+      <span>second</span>
+    </div>
+
+    </div>
+
+    <div class="image">
+      <img src="img/background.png">
+    </div>
+  </div>
+
+
+</div>
+<script>
+
+let countDate = new Date('jul 1, 2021 00:00:00').getTime();
+
+function countDown(){
+  let now = new Date().getTime();
+  gap = countDate - now;
+
+  let second = 1000;
+  let minute = second * 60;
+  let hour = minute * 60;
+  let day = hour * 24;
+
+  let d = Math.floor(gap / day);
+  let h = Math.floor(gap % (day)) / (hour);
+  let h = Math.floor(gap % (hour)) / (minute);
+  let h = Math.floor(gap % (minute)) / (second);
+
+  document.getElementById('day').innerText = d;
+  document.getElementById('hour').innerText = h;
+  document.getElementById('minute').innerText = m;
+  document.getElementById('second').innerText = s;
+
+
+}
+
+setInterval(function(){
+  countDown();
+}, 1000)
+
+</script>
 </body>
-
 </html>
