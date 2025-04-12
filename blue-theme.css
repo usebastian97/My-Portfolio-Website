@@ -1,0 +1,11 @@
+/* Blue Theme Colors */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #0077b6;
+    --text-color: #f8f9fa;
+    --text-color-light: #e9ecef;
+    --bg-color: #0d1b2a;
+    --bg-color-alt: #1b263b;
+    --border-color: #2a2a2a;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}

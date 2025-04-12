@@ -1,224 +1,380 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Sebastian Utoiu</title>
-
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css" href="default.css">
-	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Utoiu | Portfolio</title>
+    
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Theme Stylesheets -->
+    <link id="theme-style" rel="stylesheet" href="">
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home">Sebastian<span>.dev</span></a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-				<h1>Hi, I'm Sebastian Utoiu</h1>
-			</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
+                    <h1>Hi, I'm <span>Sebastian Utoiu</span></h1>
+                    <h2>Junior Android Developer</h2>
+                    <p>Passionate about mobile development and web technologies</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="UtoiuSebastian.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/usebastian97" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+                    <img src="images/sebi.jpeg" alt="Sebastian Utoiu">
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="theme-switcher">
+            <div class="theme-text">Theme</div>
+            <div class="theme-options">
+                <div data-mode="light" id="light-mode" class="theme-option active"></div>
+                <div data-mode="dark" id="dark-mode" class="theme-option"></div>
+                <div data-mode="blue" id="blue-mode" class="theme-option"></div>
+                <div data-mode="green" id="green-mode" class="theme-option"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                    <img src="images/sebi.jpeg" alt="Sebastian Utoiu">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Junior Android Developer at <span>@PlinTech</span></h3>
+                    <p>My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.</p>
+                    <p>I am also an open-source enthusiast and maintainer. I learned a lot from the open-source community and I love how collaboration and knowledge sharing happened through open-source.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Sebastian Utoiu</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>contact@sebastianutoiu.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>From:</span>
+                            <p>Romania</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Freelance:</span>
+                            <p>Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-left" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JAVA</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>KOTLIN</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JAVASCRIPT</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>DART</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-right" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Tools & Technologies</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-android"></i>
+                            <p>Android Studio</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-code"></i>
+                            <p>VS Code</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <p>SQLite</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <p>Toad Oracle</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-github"></i>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-code-branch"></i>
+                            <p>SourceTree</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <p>Adobe XD</p>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <p>UI/UX Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<a href="index.html">
-						<div class="dots-wrapper">
-							<div id="dot-1" class="browser-dot"></div>
-							<div id="dot-2" class="browser-dot"></div>
-							<div id="dot-3" class="browser-dot"></div>
-						</div>
-					</a>
-					
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/converter.jpeg" alt="Exchange Rate App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/usebastian97/Exchange-Rate" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Exchange Rate App</h3>
+                        <p>Designed and built in Java 100.0%</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/vremee.png" alt="Weather App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/usebastian97/WeatherApp" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Android app with Java that handles JSON data from a REST API service using the Volley library.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/Calculator-Apps.jpeg" alt="Calculator App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/usebastian97/Calculator" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculator App</h3>
+                        <p>Simple calculator built in Java for Android phones.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more" data-aos="fade-up">
+                <a href="https://github.com/usebastian97?tab=repositories" target="_blank" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
 
-					<ul id="navigation">
-						<li><a href="index.html#contact">CONTACT</a></li>
-						
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Romania</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@sebastianutoiu.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+40 XXX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/usebastian97" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" data-aos-delay="300">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-					</ul>
-				</div>
-
-				<div class="left-column">
-					<img id="profile_pic" src="images/sebi.jpeg">
-					<p style="text-align: center;line-height: 0;"> Choose a theme and feel comfortable.</p>
-
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
-
-					
-				</div>
-
-				<div class="right-column">
-
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h4>WHAT I DO</h4> 
-							<p> Junior Android Developer at @PlinTech.</p>
-							<hr>
-							
-							<p></p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-
-			<div class="about-wrapper">
-				<div class="about-me">
-					<h4 style="text-align: center;">MORE ABOUT ME</h4>
-
-					<p style="text-align: center;">Passionate about <span style="color: #21b965"> MOBILE PROGRAMMING ON ANDROID</span> and <span style="color: #ce8806;">WEB DEVELOPMENT</span></p>
-					
-
-					<p style="text-align: center;">My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.</p>
-
-                    <p style="text-align: center;">I am also an open-source enthusiast and maintainer. I learned a lot from the open-source community and I love how collaboration and knowledge sharing happened through open-source.</p>
-
-					<hr>
-
-					<h4 style="text-align: center;">MOST USED LANGUAGES</h4>
-						<br>
-					
-					<div id="languages">
-						<ul>
-							<li>JAVA</li>
-							<li>HTML</li>
-							<li>JAVASCRIPT</li>
-						</ul>
-
-						<ul>
-							<li>CSS</li>
-							<li>DART</li>
-							<li>KOTLIN</li>	
-						</ul>
-
-					
-
-						</div>
-					
-
-                     <h4 style="text-align: center;">SKILLS</h4>
-
-					<div id="skills">
-						<ul>
-							<li>Android Studio</li>
-							<li>VS Code</li>
-							<li>SQLite</li>
-							<li>Toad Oracle</li>
-							<li>Adobe XD</li>
-							<li>UI/UX Design</li>
-						</ul>
-
-						<ul>
-							<li>Android SDK</li>
-							<li>GitHub</li>
-							<li>SourceTree</li>
-							<li>NetBeans</li>
-							<li>Atom IDE</li>
-						</ul>
-
-					</div>
-
-					<p style="text-align: center;" style="font-size: 15px;" style="margin-top: 40px;"> <a target="_blank" href="UtoiuSebastian.pdf">Download Resume</a></p>
-
-				</div>
-
-
-				
-			</div>
-
-		</div>
-	</section>
-
-	<section class="s1">
-		<div class="main-container">
-			<h3 style="text-align: center;">SOME OF MY PROJECTS</h3>
-
-			<div class="post-wrapper">
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/converter.jpeg">
-						<div class="post-preview">
-							<h6 class="post-title">Exchange Rate App</h6>
-							<p class="post-intro" >Designed and built in Java 100.0%</p>
-							<a href="https://github.com/usebastian97/Exchange-Rate" style="font-family: 'Courier New', Courier, monospace;">Read More on GitHub</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/vremee.png">
-						<div class="post-preview">
-							<h6 class="post-title">Weather App</h6>
-							<p class="post-intro">I build an Android app with Java that handles JSON data from a REST API service. The app uses the Volley library to create a weather app using API data.</p>
-							<a href="https://github.com/usebastian97/WeatherApp" style="font-family: 'Courier New', Courier, monospace;">Read More on GitHub</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/Calculator-Apps.jpeg">
-						<div class="post-preview">
-							<h6 class="post-title">Calculator App</h6>
-							<p class="post-intro">I build a simple calculator in Java for Android phones.</p>
-							<a href="https://github.com/usebastian97/Calculator" style="font-family: 'Courier New', Courier, monospace;">Read More on GitHub</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<p style="text-align: center;"><a href="https://github.com/usebastian97?tab=repositories">VIEW ALL REPOSITORIES</a></p>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-			<a href=""></a>
-			<h3 style="text-align: center;">Get In Touch</h3>
-
-			<form id="contact-form">
-				<a name="contact"></a>
-
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-		</div>
-	</section> 
-
-	<footer>
-        <p>Copyright &copy;2021 Sebastian Utoiu. All rights reserved.</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sebastian Utoiu. All Rights Reserved.</p>
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-	<script type="text/javascript" src="script.js"></script>
+    <!-- Scripts -->
+    <!-- jQuery (needed for some components) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
